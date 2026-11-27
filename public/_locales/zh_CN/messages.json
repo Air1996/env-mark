@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "EnvMark — 环境标记",
+    "description": "扩展名称"
+  },
+  "extDescription": {
+    "message": "在页面上醒目标记当前站点属于开发 / 测试 / 生产环境，一眼分辨，避免在测试时误操作线上数据。",
+    "description": "扩展简介"
+  },
+  "cmdToggle": {
+    "message": "显示 / 隐藏当前页面的环境标记",
+    "description": "快捷键说明"
+  }
+}

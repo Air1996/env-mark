@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EnvMark 隐私政策 · Privacy Policy</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --fg: #18181b;
+        --muted: #71717a;
+        --border: #e4e4e7;
+        --card: #fafafa;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #09090b;
+          --fg: #fafafa;
+          --muted: #a1a1aa;
+          --border: #27272a;
+          --card: #111113;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Segoe UI', sans-serif;
+        font-size: 15px;
+        line-height: 1.8;
+        -webkit-font-smoothing: antialiased;
+      }
+      main {
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 72px 24px 96px;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 8px;
+      }
+      header img {
+        width: 36px;
+        height: 36px;
+        border-radius: 9px;
+      }
+      h1 {
+        font-size: 26px;
+        font-weight: 650;
+        letter-spacing: -0.01em;
+        margin: 0;
+      }
+      .date {
+        color: var(--muted);
+        font-size: 13px;
+        margin: 0 0 36px;
+      }
+      h2 {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 34px 0 10px;
+      }
+      p,
+      li {
+        color: var(--fg);
+      }
+      p {
+        margin: 0 0 12px;
+      }
+      ul {
+        margin: 0 0 12px;
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 6px;
+      }
+      code {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        padding: 1px 5px;
+        font-size: 13px;
+        font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+      .callout {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 18px 20px;
+        margin: 24px 0 8px;
+      }
+      .callout p:last-child {
+        margin-bottom: 0;
+      }
+      hr {
+        border: 0;
+        border-top: 1px solid var(--border);
+        margin: 48px 0;
+      }
+      .en {
+        color: var(--muted);
+        font-size: 14px;
+      }
+      footer {
+        margin-top: 56px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      a {
+        color: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="./" title="返回首页"><img src="icon-128.png" alt="EnvMark" /></a>
+        <h1>EnvMark 隐私政策</h1>
+      </header>
+      <p class="date">最后更新：2026 年 11 月 27 日</p>
+
+      <div class="callout">
+        <p><strong>一句话概括：EnvMark 不收集你的任何数据。</strong></p>
+        <p>
+          没有账号系统，没有服务器，没有统计埋点。扩展做的所有判断都在你的浏览器里完成，不会把任何信息发送到外部。
+        </p>
+      </div>
+
+      <h2>扩展会读到什么</h2>
+      <p>为了判断当前页面的环境，扩展的内容脚本只在本地读取以下几项：</p>
+      <ul>
+        <li>当前页面的 URL（用于匹配你配置的规则）</li>
+        <li>页面 <code>&lt;html&gt;</code> 标签上的 <code>data-env</code> 等属性</li>
+        <li>页面的 <code>&lt;meta name="env"&gt;</code> 一类的环境声明标签</li>
+        <li>页面自身可能写入的 <code>window.__ENV__</code> 变量</li>
+      </ul>
+      <p>
+        这些信息只用于在当前标签页里决定「显示哪种标记、什么颜色」，<strong>不读取页面正文、表单内容、Cookie 或密码</strong>，也不会离开你的设备。
+      </p>
+
+      <h2>扩展会存储什么</h2>
+      <p>扩展使用 <code>chrome.storage.local</code> 在本地保存：</p>
+      <ul>
+        <li>你自己添加的环境规则</li>
+        <li>标记样式、颜色、透明度等外观设置</li>
+        <li>你手动指定的某个域名属于哪个环境</li>
+      </ul>
+      <p>
+        这些设置保存在你自己的浏览器里，不上传、不备份到云端、不与任何第三方共享。卸载扩展后随之清除。
+      </p>
+
+      <h2>权限说明</h2>
+      <ul>
+        <li>
+          <strong>storage</strong>：保存上面提到的规则与设置。
+        </li>
+        <li>
+          <strong>在所有网站上读取和更改数据</strong>：标记需要能出现在你访问的任意页面上，因此无法预先枚举域名。实际上扩展只会在页面最上层叠加一个不拦截鼠标事件的标记层，不修改页面内容。
+        </li>
+      </ul>
+      <p>例外：浏览器内置页面（chrome://、扩展商店等）出于安全限制不会被注入，这是浏览器本身的规则。</p>
+
+      <h2>第三方</h2>
+      <p>
+        未集成任何第三方分析、广告或追踪 SDK。扩展运行时不发起任何网络请求，也不加载任何远程代码。
+      </p>
+
+      <h2>儿童隐私</h2>
+      <p>扩展不面向儿童，也不收集任何年龄相关信息。</p>
+
+      <h2>政策变更</h2>
+      <p>
+        如果本政策发生实质性变化，会更新本页顶部的日期，并在扩展的版本更新说明中注明。
+      </p>
+
+      <h2>联系方式</h2>
+      <p>关于隐私的问题，可以发邮件到 <a href="mailto:ziye2016@gmail.com">ziye2016@gmail.com</a>。</p>
+
+      <hr />
+
+      <h1 style="font-size: 20px">Privacy Policy (English)</h1>
+      <p class="en">Last updated: November 27, 2026</p>
+      <p class="en">
+        EnvMark does not collect any user data. There are no accounts, no servers, and no analytics.
+        All environment detection happens locally in your browser.
+      </p>
+      <p class="en">
+        To decide which marker to display, the content script reads the current page URL, environment
+        declarations on the <code>&lt;html&gt;</code> element, <code>&lt;meta&gt;</code> tags such as
+        <code>name="env"</code>, and a page-defined <code>window.__ENV__</code> value. This information
+        is processed locally and never transmitted. The extension does not read page content, form
+        data, or cookies.
+      </p>
+      <p class="en">
+        Your rules and appearance settings are stored locally with <code>chrome.storage.local</code>
+        and are removed when you uninstall the extension. No third-party analytics, ads, or trackers
+        are included, and no remote code is loaded.
+      </p>
+      <p class="en">
+        Questions: <a href="mailto:ziye2016@gmail.com">ziye2016@gmail.com</a>
+      </p>
+
+      <footer>
+        EnvMark — 环境标记 · <a href="./">首页</a> ·
+        <a href="https://github.com/Air1996/env-mark">GitHub</a>
+      </footer>
+    </main>
+  </body>
+</html>
