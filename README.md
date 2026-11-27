@@ -2,6 +2,8 @@
 
 一个浏览器扩展：**在当前网页上醒目标出它是开发 / 测试 / 生产环境**，避免测试的时候手一抖改到线上数据。
 
+首页 <https://air1996.github.io/env-mark/> · [下载最新版](https://github.com/Air1996/env-mark/releases/latest)（解压后加载即可，无需构建）
+
 基于 [WXT](https://wxt.dev) + React + Tailwind CSS v4 构建，界面参照 shadcn/ui 的视觉语言（zinc 中性色、细边框卡片、克制的动效），跟随系统深色模式。
 
 ## 界面
@@ -23,6 +25,8 @@
 - **配置可迁移**：设置与规则支持导出 / 导入 JSON
 
 ## 快速开始
+
+不想装 Node 也行：到 [Releases](https://github.com/Air1996/env-mark/releases) 下载 `env-mark-*-chrome.zip`，解压得到 `chrome-mv3` 目录，直接跳到下面的「手动安装已构建的版本」。
 
 ```bash
 npm install          # 安装依赖（会自动执行 wxt prepare）
