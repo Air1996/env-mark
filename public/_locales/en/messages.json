@@ -1,0 +1,14 @@
+{
+  "extName": {
+    "message": "EnvMark — Environment Marker",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Clearly marks whether the current site is dev, staging or production, so you never touch live data by accident.",
+    "description": "Extension description"
+  },
+  "cmdToggle": {
+    "message": "Show / hide the marker on this page",
+    "description": "Keyboard shortcut description"
+  }
+}
