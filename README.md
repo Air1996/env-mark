@@ -75,7 +75,7 @@ scripts/
   gen-icons.mjs        零依赖生成扩展图标 PNG
 store/                 上架 Chrome Web Store 用的文案与素材
   listing.md           商店信息、权限理由、隐私标签页逐项文案
-  privacy.html         隐私政策页（需自行托管后填到后台）
+  privacy.html         隐私政策页（源文件，发布到 Pages 的是 site/privacy.html）
   screenshots/         1280×800 截图 ×4
   promo-440x280.png    小宣传图
 ```
@@ -87,7 +87,7 @@ store/                 上架 Chrome Web Store 用的文案与素材
 1. **账号**：一次性 5 美元注册费 + 必须开启两步验证（没开无法提交）+ 验证过的联系邮箱
 2. **包**：上传 `.output/env-mark-1.1.0-chrome.zip`，根目录已经是 `manifest.json`
 3. **隐私标签页**：单一用途说明、`storage` 权限理由、全站访问权限理由、声明「不使用远程代码」、数据收集全部不勾
-4. **隐私政策**：把 `store/privacy.html` 托管到公网（GitHub Pages 即可），地址填进后台
+4. **隐私政策**：已托管在 GitHub Pages，直接填 **https://air1996.github.io/env-mark/privacy.html**
 5. **素材**：`store/` 下已备好 128 图标、4 张 1280×800 截图、440×280 宣传图
 
 全站匹配会触发人工深审，首次审核时间会比普通扩展长一些。
@@ -105,6 +105,13 @@ store/                 上架 Chrome Web Store 用的文案与素材
 ## 技术栈
 
 WXT 0.21 · React 19 · TypeScript · Tailwind CSS v4 · lucide-react
+
+## 站点与部署
+
+`site/` 目录通过 GitHub Actions 发布到 GitHub Pages，推送 `main` 即自动部署：
+
+- 落地页 <https://air1996.github.io/env-mark/>
+- 隐私政策 <https://air1996.github.io/env-mark/privacy.html>（上架 Chrome 应用商店时填这个地址）
 
 ## 数据迁移
 

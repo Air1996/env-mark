@@ -116,7 +116,13 @@ EnvMark — 环境标记
 
 **隐私政策网址**
 
-必须是一个公网可访问的页面（私有仓库里的文件不算）。用 `store/privacy.html` 上传到 GitHub Pages 或任意静态托管，把那个地址填进来。
+必须是一个公网可访问的页面（私有仓库里的文件不算）。已部署到 GitHub Pages，直接填：
+
+```
+https://air1996.github.io/env-mark/privacy.html
+```
+
+源文件在 `store/privacy.html`，发布用的是 `site/privacy.html`，两者改一处记得同步。
 
 ---
 
